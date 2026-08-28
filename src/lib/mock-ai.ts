@@ -231,5 +231,8 @@ export async function planSchedule(tasks: PlannerTask[]): Promise<PlannerTask[]>
     if (a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
     return 0;
   });
-  return sorted.map((task, index) => ({ ...task, slot: slots[Math.min(index, slots.length - 1)] }));
+  return sorted.map((task, index) => ({
+    ...task,
+    slot: slots[Math.min(index, slots.length - 1)] ?? slots[slots.length - 1]!,
+  }));
 }
