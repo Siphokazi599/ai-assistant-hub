@@ -1,244 +1,258 @@
 # AI Assistant Hub
 
-AI Workplace Productivity Assistant
+## Project Overview
 
-Build a modern, responsive frontend-only SaaS-style web application called AI Workplace Productivity Assistant.
+**AI Workplace Productivity Assistant** is a modern, responsive web application designed to help professionals improve workplace productivity using AI-powered tools.
 
-The app helps professionals use AI to complete common workplace productivity tasks.
+The application provides simple tools for generating professional emails, summarizing meeting notes, conducting AI-assisted research, and planning daily or weekly tasks.
 
-Important Technical Requirements
+This project is designed as a **frontend-only application**. It does not require user registration, login, a backend server, or a database. AI functionality is demonstrated using structured prompts and mock/demo responses.
 
-Frontend only
+---
 
-No backend
+## Features Implemented
 
-No database
+###  Smart Email Generator
 
-No authentication
+* Generate professional workplace emails.
+* Supports different communication tones:
 
-No login or registration
+  * Formal
+  * Friendly
+  * Persuasive
+* Editable generated email content.
+* Copy generated emails to the clipboard.
+* Clear and regenerate content.
 
-No user accounts
+###  Meeting Notes Summarizer
 
-No payment system
+* Paste lengthy meeting notes into the application.
+* Generate a structured summary.
+* Extract:
 
-Store temporary data only in browser state/localStorage if needed
+  * Key discussion points
+  * Decisions made
+  * Action items
+  * Responsible persons
+  * Deadlines
+* Editable summary output.
+* Copy summary to the clipboard.
 
-Use mock/demo AI responses so the app works without an API key or backend
+###  AI Research Assistant
 
-Keep the project simple enough to work within a free Lovable plan
+* Enter a research topic or workplace question.
+* Generate a structured research response.
+* Provides:
 
-Design
+  * Overview
+  * Key findings
+  * Important points
+  * Suggested next steps
+  * Sources/references placeholder
+* Includes an AI-generated content disclaimer.
 
-Create a clean, modern and professional SaaS dashboard.
+###  Task Planner
 
-Color theme:
+* Create and manage workplace tasks.
+* Add deadlines and priorities.
+* Organise tasks into:
 
-Light purple as the primary accent
+  * High priority
+  * Medium priority
+  * Low priority
+* Generate suggested daily or weekly schedules.
+* Edit, complete, and delete tasks.
 
-Dark navy/charcoal for text and sidebar
+###  Modern Dashboard
 
-White/light backgrounds
+* Clean SaaS-style dashboard.
+* Sidebar navigation.
+* Productivity overview.
+* Quick access to AI tools.
+* Recent activity.
+* Responsive layout for desktop, tablet, and mobile.
 
-Subtle purple gradients
+###  Responsible AI
 
-Rounded cards
+The application includes a Responsible AI disclaimer reminding users that AI-generated information may contain errors, bias, or outdated information.
 
-Soft shadows
+Users are advised not to enter confidential, personal, or sensitive company information.
 
-Modern typography
+---
 
-Professional icons
+## Technologies and Tools Used
 
-Responsive on desktop, tablet and mobile
+### Frontend
 
-Dashboard Layout
+* HTML5
+* CSS3
+* JavaScript
+* React
 
-Create:
+### UI & Design
 
-Sidebar Navigation
+* Responsive web design
+* Modern SaaS dashboard interface
+* Light purple and dark colour scheme
+* Responsive sidebar navigation
+* Cards, forms, buttons and interactive components
 
-Dashboard
+### Development Tools
 
-Email Generator
+* Lovable
+* Visual Studio Code
+* Git
+* GitHub
 
-Meeting Summarizer
+### AI
 
-Research Assistant
+* Structured AI prompt templates
+* Mock/demo AI responses
+* Frontend-based AI interaction
 
-Task Planner
+> **Note:** The current version does not use a backend or external AI API. Mock responses are used so the application can operate as a frontend prototype without API keys.
 
-Settings
+---
 
-Include the app name/logo at the top and a simple responsive mobile navigation.
+## Project Structure
 
-Dashboard Home
+```text
+AI-Productivity-Assistant/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── README.md
+└── ...
+```
 
-Show:
+---
 
-Welcome message
+## Setup Instructions
 
-Quick action cards
+### 1. Clone the Repository
 
-Recent activity
+```bash
+git clone https://github.com/YOUR-USERNAME/AI-Productivity-Assistant.git
+```
 
-Productivity statistics
+### 2. Open the Project
 
-Short description of each AI tool
+```bash
+cd AI-Productivity-Assistant
+```
 
-AI Tools
+### 3. Install Dependencies
 
-1. Smart Email Generator
+If the project uses Node.js and npm:
 
-Allow users to enter:
+```bash
+npm install
+```
 
-Recipient/purpose
+### 4. Start the Development Server
 
-Subject or topic
-
-Key points
-
-Allow tone selection:
-
-Formal
-
-Friendly
-
-Persuasive
-
-Generate an editable professional email.
-
-Include:
-
-Generate button
-
-Copy button
-
-Clear button
-
-Editable output area
-
-2. Meeting Notes Summarizer
-
-Provide a large text area where users can paste meeting notes.
-
-Generate a structured summary containing:
-
-Meeting Summary
-
-Key Discussion Points
-
-Decisions Made
-
-Action Items
-
-Responsible Person
-
-Deadlines
-
-Make the generated content editable and provide a Copy button.
-
-3. AI Research Assistant
-
-Allow users to enter a research topic or workplace question.
-
-Generate a structured research response containing:
-
-Overview
-
-Key Findings
-
-Important Points
-
-Suggested Next Steps
-
-Sources/References placeholder
-
-Clearly indicate that the results are AI-generated and should be verified.
-
-4. Task Planner
-
-Allow users to enter tasks and optional deadlines.
-
-Generate a suggested daily or weekly schedule.
-
-Prioritise tasks as:
-
-High
-
-Medium
-
-Low
-
-Display tasks in a clean timeline or task-card layout.
-
-Allow users to edit, complete and delete tasks.
-
-AI Prompt System
-
-Create structured frontend prompt templates for each AI tool.
-
-The UI should make it clear what information the user provides and what the AI is expected to produce.
-
-Because there is no backend or AI API, use realistic demo/mock AI responses that change based on the user's input where practical.
-
-Do not require API keys.
-
-Responsible AI
-
-Include a visible Responsible AI Disclaimer:
-
-"AI-generated content may contain mistakes, bias, or outdated information. Review and verify important information before using it in professional decisions or communications. Do not enter confidential, personal, or sensitive company information."
-
-Also include a small disclaimer near AI-generated outputs.
-
-User Experience
-
-Smooth navigation between tools
-
-Clear empty states
-
-Loading animation when generating content
-
-Toast notifications for actions such as copied, generated, saved and deleted
-
-Editable AI outputs
-
-Copy-to-clipboard functionality
-
-Clear buttons
-
-Responsive design
-
-Accessible form controls
-
-Helpful placeholder text
-
-Professional error messages
-
-Final Goal
-
-The finished application should look like a polished AI productivity SaaS dashboard, but remain a simple frontend prototype that requires no login, backend, database, or paid API.
-
-Prioritise a polished UI, usability, responsive design and realistic AI-demo functionality.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3b7ee4ea-410a-4349-b449-f2c3ed00f400).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+The application will normally be available at:
+
+```text
+http://localhost:5173
+```
+
+Open the address in your web browser.
+
+---
+
+## Running the Project with Lovable
+
+The application can also be developed and previewed using **Lovable**.
+
+1. Open the project in Lovable.
+2. Review the generated application.
+3. Test each productivity feature.
+4. Make any required UI or functionality changes.
+5. Export or connect the project to GitHub.
+6. Commit and push changes regularly.
+
+---
+
+## No Login or Registration Required
+
+This project intentionally does **not** include:
+
+* User registration
+* Login
+* Authentication
+* User profiles
+* Backend services
+* Database
+* Payment functionality
+
+The application is designed to work as a simple, accessible frontend prototype.
+
+---
+
+## Responsible AI Disclaimer
+
+> AI-generated content may contain mistakes, bias, or outdated information. Review and verify important information before using it in professional decisions or communications. Do not enter confidential, personal, or sensitive company information.
+
+---
+
+## Git and GitHub Workflow
+
+Changes should be committed and pushed regularly during development.
+
+Example:
+
+```bash
+git add .
+git commit -m "Add email generator"
+git push
+```
+
+Other useful commit messages include:
+
+```bash
+git commit -m "Create dashboard layout"
+git commit -m "Add meeting notes summarizer"
+git commit -m "Add task planner"
+git commit -m "Improve responsive design"
+git commit -m "Update README"
+```
+
+---
+
+## Future Improvements
+
+Possible future improvements include:
+
+* Integration with a real AI API.
+* Microsoft Outlook or Gmail integration.
+* Calendar integration.
+* Real-time collaboration.
+* User authentication.
+* Cloud storage.
+* Advanced analytics.
+* Export summaries and emails as PDF or Word documents.
+* Voice input for meeting notes.
+
+These features are outside the scope of the current frontend-only prototype.
+
+---
+
+## Project Goal
+
+The goal of **AI-Productivity-Assistant** is to demonstrate how AI-powered productivity tools can be combined into a single, easy-to-use workplace application.
+
+The project focuses on **simplicity, usability, responsible AI, responsive design, and professional user experience**.
+
